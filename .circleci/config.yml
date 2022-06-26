@@ -11,10 +11,10 @@ jobs:
     docker:
       - image: circleci/node:13.8.0
     steps:
-      -run: echo hello
+      - run: echo hello
   print_world:
     docker:
-      - images: circleci/node:13.8.0
+      - image: circleci/node:13.8.0
     steps:
       - run: echo world  
     # Add steps to the job
